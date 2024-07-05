@@ -42,7 +42,6 @@ nav {
     margin-right: 30px;
 }
 main {
-    position;
     top: 100px;
     z-index: 3;
     overflow: hidden;
@@ -54,6 +53,11 @@ main {
 .money_Transfer_Systems {
     background-color: #fff;
     height: 100px;
+}
+.ttpicons {
+    width: 45px;
+    vertical-align: middle;
+    padding: 15px;
 }
 footer {
     background-color: black;
