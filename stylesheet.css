@@ -15,7 +15,7 @@ nav {
     align-items: center;
     overflow: hidden;
     transition: 0.4s;
-    padding: 90px 10px;
+    padding: 80px 10px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,6 +37,12 @@ main {
 }
 #sect1 {
     background-color: rgb(25, 196, 202);
+}
+#heading1 {
+    overflow: hidden;
+    transition: 0.4s;
+    padding-top: 20vh;
+    margin-top: 20vh;
 }
 
 #mainheadimg {
@@ -71,10 +77,6 @@ main {
     font-size: larger;
     font-weight: bold;
     color: rgb(0, 47, 255);
-}
-#heading1 {
-    overflow: hidden;
-    transition: 0.45s;
 }
 .spinfo {
     color: aliceblue;
