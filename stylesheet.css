@@ -72,6 +72,10 @@ main {
     font-weight: bold;
     color: rgb(0, 47, 255);
 }
+#heading1 {
+    overflow: hidden;
+    transition: 0.45s;
+}
 .spinfo {
     color: aliceblue;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
