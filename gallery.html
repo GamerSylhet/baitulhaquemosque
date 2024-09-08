@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Working Status | Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script>window.onscroll = function() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.cssText = "padding: 0; height = 10vh";
+            document.getElementById("mainheadimg").style.cssText = "height: 95%; width: 35%";
+            document.getElementById("Edot").style.cssText = "border: 1px solid gold; font-size: 15px; padding: 4px;"
+            document.getElementById("mainid").style.cssText = "padding-top: 30%; margin-top: 30%";
+
+        } 
+        else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("mainheadimg").style.cssText = "fontSize: 35px; height: 100%; width: 65%";
+            document.getElementById("Edot").style.cssText = "border: 2px solid gold; font-size: 35px; padding: 7px; 9px"
+            document.getElementById("mainid").style.cssText = "padding-top: 25vh; margin-top: 25vh";
+        }
+    };
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="MainIMG.jpg" alt="Main Head Image" id="mainheadimg">
+            <a href="#" id="Edot">•••</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="heading1">Baitul Haque Jame' Masjid Kusumbag: Building Project</h1>
+        
+    </main>
+    <footer>
+        <p id="contact">
+            Contact Us
+        </p><br>
+        <p id="continfo">
+            <span class="spcont">Baitul HAque Jame Masjid Committee.</span>
+            <span class="spcont">Kusumbag, Hetimgonj, Golapgonj | Sylhet-3100</span>
+            <span class="spcont">Tel: +8801*********</span>
+            <span class="spcont">Email: baitulhaquejamemasjid24@gmail.com</span>
+        </p>
+        <p id="aboutus_footer">
+            About Us
+        </p><br>
+        <p id="ourinfo_footer">
+            <span class="spcont">Baitul HAque Jame Masjid Committee.</span>
+            <span class="spcont">Kusumbag, Hetimgonj, Golapgonj | Sylhet-3100</span>
+            <span class="spcont">Tel: +8801*********</span>
+            <span class="spcont">Email: baitulhaquejamemasjid24@gmail.com</span>
+        </p>
+    </footer>
+</body>
+</html>

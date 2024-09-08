@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: rgba(47, 165, 211, 0.445);
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s;
+    padding: 80px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+#mainheadimg {
+    width: 65%;
+    vertical-align: middle;
+}
+
+#Edot {
+    color: rgb(221, 190, 17);
+    font-size: 30px;
+    border: 2px solid rgb(221, 190, 17);
+    padding: 9px 9px 9px 9px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-right: 30px;
+}
+main {
+    top: 100px;
+    z-index: 3;
+    overflow: hidden;
+    transition: 0.4s;
+    padding-top: 20vh;
+    margin-top: 20vh;
+}
+#heading1 {
+    overflow: hidden;
+    transition: 0.4s;
+    padding-top: 20vh;
+    margin-top: 20vh;
+}
+/* Copy Top End */
+
+
+
+
+
+/* Write code here! */
+
+
+
+
+
+/* Copy again from here! */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10%;
+}#contact {
+    border-bottom: 2px solid gold;
+}
+#continfo {
+    margin: 20px;
+}
+#aboutus_footer {
+    border-bottom: 2px solid gold;
+}
+#ourinfo_footer {
+    margin: 20px;
+}
+.spcont {
+    display: block;
+}
