@@ -48,6 +48,7 @@ main {
     transition: 0.4s;
     padding-top: 20vh;
     margin-top: 20vh;
+    text-align: center;
 }
 #heading1 {
     overflow: hidden;
