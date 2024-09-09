@@ -5,28 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Working Status | Gallery</title>
     <link rel="stylesheet" href="gallery.css">
-    <script>window.onscroll = function() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.cssText = "padding: 0; height = 10vh";
-            document.getElementById("mainheadimg").style.cssText = "height: 95%; width: 35%";
-            document.getElementById("Edot").style.cssText = "border: 1px solid gold; font-size: 15px; padding: 4px;"
-            document.getElementById("mainid").style.cssText = "padding-top: 30%; margin-top: 30%";
-
-        } 
-        else {
-            document.getElementById("navbar").style.padding = "80px 10px";
-            document.getElementById("mainheadimg").style.cssText = "fontSize: 35px; height: 100%; width: 65%";
-            document.getElementById("Edot").style.cssText = "border: 2px solid gold; font-size: 35px; padding: 7px; 9px"
-            document.getElementById("mainid").style.cssText = "padding-top: 25vh; margin-top: 25vh";
-        }
-    };
-    </script>
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <img src="MainIMG.jpg" alt="Main Head Image" id="mainheadimg">
-            <a href="#" id="Edot">•••</a>
+        <nav id="navbar">          
+            <ul id="openSidebar">
+                <img src="MainIMG.jpg" alt="Main Head Image" id="mainheadimg">
+                <li onclick=showSidebar()><a id="Edot">•••</a></li>
+            </ul>
+            <ul id="sidebarBTN">
+                <li onclick=hideSidebar()><a ><svg id="crossSign" xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="40px" fill="#ffd700"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a></li>
+                <li><a href="#" id="gallery">Masjid Gallery</a></li>
+                <li><a href="index.html" id="Home">Home</a></li>
+                <li><a href="donationpage.html" id="donate">Donate</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -83,5 +75,29 @@
             <span class="spcont">Email: baitulhaquejamemasjid24@gmail.com</span>
         </p>
     </footer>
+<script>
+    window.onscroll = function() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.cssText = "padding: 0; height = 10vh";
+            document.getElementById("mainheadimg").style.cssText = "height: 95%; width: 35%";
+            document.getElementById("Edot").style.cssText = "font-size: 20px;"
+            document.getElementById("mainid").style.cssText = "padding-top: 30%; margin-top: 30%";
+
+        } 
+        else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("mainheadimg").style.cssText = "height: 100%; width: 65%";
+            document.getElementById("Edot").style.cssText = "font-size: 35px;"
+            document.getElementById("mainid").style.cssText = "padding-top: 25vh; margin-top: 25vh";
+        }
+        
+    };
+    function showSidebar() {
+            document.getElementById("sidebarBTN").style.cssText = "display: flex;"
+    };
+    function hideSidebar(){
+            document.getElementById("sidebarBTN").style.cssText = "display: none;"
+    };
+</script>
 </body>
 </html>
