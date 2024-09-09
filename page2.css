@@ -7,40 +7,79 @@ a {
 }
 body {
     background-color: rgba(47, 165, 211, 0.445);
+    min-height: 100vh;
 }
 header {
-    display: flex;
     position: sticky;
     top: 0;
-    z-index: 1;
-}
-nav {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.4s;
-    padding: 80px 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-}
-#mainheadimg {
-    width: 65%;
-    vertical-align: middle;
+    z-index: 999;
 }
 
-#Edot {
-    color: rgb(221, 190, 17);
-    font-size: 30px;
-    border: 2px solid rgb(221, 190, 17);
-    padding: 9px 9px 9px 9px;
-    border-radius: 10px;
-    height: fit-content;
-    margin-right: 30px;
+nav {
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+nav li {
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: gold;
+}
+nav a:hover {
+    background-color: gold;
+    color: black;
+}
+nav img:first-child{
+    margin-right: auto;
+}
+#sidebarBTN {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 99;
+    background-color: black;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#sidebarBTN li{
+    width: 100%;
+}
+#sidebarBTN a{
+    width: 100%;
+    height: 100%;
+}
+#sidebarBTN li:first-child {
+    text-decoration: none;
+    display: flex;
+    margin-left: 60%;
+}
+#crossSign {
+    background-color: black;
+    fill: gold;
+}
+#crossSign:hover {
+    background-color: gold;
+    fill: black;
+}
+
 main {
     top: 100px;
     z-index: 3;
